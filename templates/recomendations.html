@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% if man == "child" %}
+        <div>
+            Можно давать только парацетамол и антигриппин
+        </div>
+    {% else %}
+        <div>
+            Можно принимать любые лекарства
+        </div>
+    {% endif %}   
+{% endblock %}

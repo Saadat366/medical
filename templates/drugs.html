@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <ol>
+        {% for drug in druglist %}
+            <li>{{ drug }}</li>
+        {% endfor %}
+    </ol>
+{% endblock %}

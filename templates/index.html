@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+            Этот сайт поможет выбрать лекарство
+            <a href="{{ url_for('recomendations', man='child') }}">детям</a> 
+            и 
+            <a href="{{ url_for('recomendations') }}">взрослым</a>
+    </div>    
+{% endblock %}
